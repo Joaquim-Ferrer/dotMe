@@ -1,0 +1,26 @@
+{
+  "name": "dotme",
+  "version": "1.0.0",
+  "description": "Personal webpage for Joaquim Ferrer",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Joaquim-Ferrer/dotMe.git"
+  },
+  "author": "Joaquim Ferrer",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Joaquim-Ferrer/dotMe/issues"
+  },
+  "homepage": "https://github.com/Joaquim-Ferrer/dotMe#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  }
+}
