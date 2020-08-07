@@ -1,0 +1,40 @@
+.title {
+  color: #66d9ef;
+  font-size: 2rem;
+  counter-reset: code;
+}
+
+.separator {
+  margin-top: 60px;
+}
+
+.tag {
+  color: #f92672;
+  counter-increment: code;
+}
+
+.attribute {
+  color: #a6e22e;
+}
+
+.value {
+  color: #e6db74;
+}
+
+.i1 {
+  margin-left: 30px;
+}
+
+.i2 {
+  margin-left: 60px;
+}
+
+.i3 {
+  margin-left: 90px;
+}
+
+@media (min-width: 950px) {
+  .title {
+    text-align: center;
+  }
+}

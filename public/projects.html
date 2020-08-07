@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CV</title>
+    <link rel="stylesheet" href="/css/main.css" />
+    <link rel="stylesheet" href="/css/projects.css" />
+    <script src="/js/main.js"></script>
+  </head>
+
+  <body>
+    <div class="container">
+      <nav class="navbar" id="navbar">
+        <div class="navbar__nav-box">
+          <a href="/CV">
+            <p class="navbar__nav-box__link">CV</p>
+          </a>
+          <a href="/projects">
+            <p class="navbar__nav-box__link"><i>Projects</i></p>
+          </a>
+        </div>
+        <div class="navbar__central">
+          <a href="/">
+            <p class="navbar__name">
+              Joaquim Ferrer<span class="textThingy">|</span>
+            </p>
+          </a>
+          <p class="navbar__additional-info comment">
+            joaquim.ferrer.freelancing<wbr />@gmail.com
+          </p>
+          <p class="navbar__additional-info comment">
+            +351 969962514
+          </p>
+        </div>
+        <p
+          alt="Open sidenav icon"
+          class="navbar__button"
+          onclick="setActiveSideNav"
+        >
+          Go
+        </p>
+        <img
+          class="navbar__arrow"
+          id="navbar__arrow"
+          alt="Swipe down"
+          src="/images/down_arrow_pink.svg"
+          onmouseover="toggleMoreNav()"
+        />
+        <div class="navbar__link-box">
+          <a href="https://www.linkedin.com/in/joaquim-ferrer-2a8491111/">
+            <img
+              src="/images/linkedin_img.svg"
+              alt="linkedin logo"
+              class="navbar__link-box__img"
+            />
+          </a>
+        </div>
+      </nav>
+      <div class="main">
+        <div class="card">
+          <div class="card__preview">
+            <iframe
+              class="card__preview__content"
+              src="https://www.youtube.com/embed/hrXHAs2aZkY"
+              frameborder="0"
+              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+          </div>
+          <h2 class="card__title">Pong3D</h2>
+          <p>
+            A 3D, 1 player pong like game written in C++ with OpenGL. The
+            funniest features are the rubik's cube logic and the simple particle
+            system.
+          </p>
+          <p>github.com/Joaquim-Ferrer/Pong3D</p>
+        </div>
+
+        <div class="card">
+          <div class="card__preview">
+            <img
+              src="\images\GreenpickSreenShot.PNG"
+              class="card__preview__content"
+            />
+          </div>
+          <h2 class="card__title">Greenpick</h2>
+          <p class="card__text">
+            A website built in React with Bootstrap. Also cooperated in the
+            creation of its docker container and its deployment with Nginx in
+            AWS Beanstalk.
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

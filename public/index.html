@@ -4,20 +4,28 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Joaquim Ferrer</title>
+    <link rel="stylesheet" href="/css/main.css" />
     <link rel="stylesheet" href="/css/index.css" />
     <script src="/js/index.js"></script>
+    <script src="/js/main.js"></script>
   </head>
   <body>
     <div class="container">
       <nav class="navbar" id="navbar">
         <div class="navbar__nav-box">
-          <p class="navbar__nav-box__link">CV</p>
-          <p class="navbar__nav-box__link">Projects</p>
+          <a href="/CV">
+            <p class="navbar__nav-box__link">CV</p>
+          </a>
+          <a href="/projects">
+            <p class="navbar__nav-box__link">Projects</p>
+          </a>
         </div>
         <div class="navbar__central">
-          <p class="navbar__name">
-            Joaquim Ferrer<span class="textThingy">|</span>
-          </p>
+          <a href="/">
+            <p class="navbar__name">
+              Joaquim Ferrer<span class="textThingy">|</span>
+            </p>
+          </a>
           <p class="navbar__additional-info comment">
             joaquim.ferrer.freelancing<wbr />@gmail.com
           </p>
@@ -40,11 +48,13 @@
           onmouseover="toggleMoreNav()"
         />
         <div class="navbar__link-box">
-          <img
-            src="/images/linkedin_img.svg"
-            alt="linkedin logo"
-            class="navbar__link-box__img"
-          />
+          <a href="https://www.linkedin.com/in/joaquim-ferrer-2a8491111/">
+            <img
+              src="/images/linkedin_img.svg"
+              alt="linkedin logo"
+              class="navbar__link-box__img"
+            />
+          </a>
         </div>
       </nav>
       <main id="main">

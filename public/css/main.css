@@ -1,0 +1,179 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: monospace;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #272822;
+}
+
+p {
+  color: #f8f8f2;
+  font-size: 1.3rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  padding: 0 30px;
+  margin-bottom: 50px;
+}
+
+.navbar {
+  height: 5rem;
+  position: sticky;
+  transition: 0.8s;
+  overflow-y: hidden;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.navbar__central {
+  display: flex;
+  flex-direction: column;
+}
+
+.textThingy {
+  opacity: 1;
+  animation-name: blinking;
+  animation-duration: 1.06s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes blinking {
+  0% {
+    opacity: 1;
+  }
+  49% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.navbar__button {
+  width: 26px;
+  height: 1.5rem;
+  font-size: 1.5rem;
+  line-height: 1.5rem;
+}
+
+.sidenav {
+  width: 100vw;
+  height: 0vh;
+  position: fixed;
+  z-index: 1001;
+  top: 0px;
+  right: 0px;
+  background-color: #272822;
+}
+
+.navbar__nav-box {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  display: none;
+  height: 5rem;
+}
+
+.navbar__link-box {
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  display: none;
+  align-items: center;
+  height: 5rem;
+}
+
+.navbar__additional-info {
+  text-align: center;
+  font-size: 1rem;
+  margin-top: 0rem;
+  text-align: start;
+}
+
+.navbar__name {
+  margin-top: 0;
+  line-height: 5rem;
+  font-size: 2rem;
+  color: #f92672;
+  margin-bottom: 0;
+  margin-right: 0px;
+}
+
+#main {
+  padding-top: 2rem;
+  width: 100%;
+}
+
+.navbar__nav-box__link {
+  margin-right: 4rem;
+}
+
+.navbar__arrow {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  bottom: 0;
+  transition: 0.8s;
+}
+
+.navbar__link-box__img {
+  max-height: 3rem;
+}
+
+.comment {
+  color: #75715e;
+}
+
+@media (min-width: 950px) {
+  .container {
+    padding: 0px 60px;
+  }
+
+  .navbar {
+    display: block;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
+  .navbar__central {
+    margin-right: 0px;
+  }
+
+  .navbar__button {
+    display: none;
+  }
+
+  .navbar__nav-box {
+    display: flex;
+  }
+
+  .navbar__name {
+    text-align: center;
+  }
+
+  .navbar__link-box {
+    display: flex;
+  }
+
+  .navbar__additional-info {
+    text-align: center;
+  }
+
+  #main {
+    padding: 3rem 0 0 0;
+  }
+}
