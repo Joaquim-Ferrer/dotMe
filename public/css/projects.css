@@ -14,7 +14,8 @@
   background-color: #1e1f1c;
   max-width: 100%;
   width: 400px;
-  height: 500px;
+  min-height: 500px;
+  height: fit-content;
   border-radius: 10px;
   padding: 20px;
   margin-top: 24px;
@@ -44,4 +45,8 @@
 
 .card__text {
   margin: auto 0px;
+}
+
+.card__link {
+  align-self: flex-start;
 }
