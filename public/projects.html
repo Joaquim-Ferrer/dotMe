@@ -11,6 +11,35 @@
 
   <body>
     <div class="container">
+      <div id="sidenav" class="sidenav">
+        <div class="sidenav__container">
+          <div class="sidenav__links">
+            <a href="/CV">
+              <p>
+                CV
+              </p>
+            </a>
+            <a href="/projects">
+              <p>
+                Projects
+              </p>
+            </a>
+            <a
+              href="https://www.linkedin.com/in/joaquim-ferrer-2a8491111/"
+              class="sidenav__linkdin"
+            >
+              <img
+                src="/images/linkedin_img.svg"
+                alt="linkedin logo"
+                class="navbar__link-box__img"
+              />
+            </a>
+          </div>
+          <a href="javascript:void(0)" class="closebtn" onclick="closeSidenav()"
+            >&times;</a
+          >
+        </div>
+      </div>
       <nav class="navbar" id="navbar">
         <div class="navbar__nav-box">
           <a href="/CV">
@@ -21,11 +50,11 @@
           </a>
         </div>
         <div class="navbar__central">
-          <a href="/">
-            <p class="navbar__name">
-              Joaquim Ferrer<span class="textThingy">|</span>
-            </p>
-          </a>
+          <a href="/" class="navbar__home-link"></a>
+
+          <p class="navbar__name">
+            Joaquim Ferrer<span class="textThingy">|</span>
+          </p>
           <p class="navbar__additional-info comment">
             joaquim.ferrer.freelancing<wbr />@gmail.com
           </p>
@@ -36,17 +65,20 @@
         <p
           alt="Open sidenav icon"
           class="navbar__button"
-          onclick="setActiveSideNav"
+          onclick="openSidenav()"
         >
           Go
         </p>
-        <img
-          class="navbar__arrow"
-          id="navbar__arrow"
-          alt="Swipe down"
-          src="/images/down_arrow_pink.svg"
-          onmouseover="toggleMoreNav()"
-        />
+        <a>
+          <img
+            class="navbar__arrow"
+            id="navbar__arrow"
+            alt="Swipe down"
+            src="/images/down_arrow_pink.svg"
+            onmouseover="toggleMoreNav()"
+            ontouchend="toggleMoreNav()"
+          />
+        </a>
         <div class="navbar__link-box">
           <a href="https://www.linkedin.com/in/joaquim-ferrer-2a8491111/">
             <img
@@ -74,7 +106,9 @@
             funniest features are the rubik's cube logic and the simple particle
             system.
           </p>
-          <p>github.com/Joaquim-Ferrer/Pong3D</p>
+          <a href="https://github.com/Joaquim-Ferrer/Pong3D"
+            ><p>github.com/Joaquim-Ferrer/Pong3D</p></a
+          >
         </div>
 
         <div class="card">
@@ -89,8 +123,8 @@
           <h2 class="card__title">Greenpick</h2>
           <p class="card__text">
             A website built in React with Bootstrap. Also cooperated in the
-            creation of its docker container and its deployment with Nginx in
-            AWS Beanstalk.
+            creation of its dockerizaton and its deployment with Nginx in AWS
+            Beanstalk.
           </p>
         </div>
       </div>

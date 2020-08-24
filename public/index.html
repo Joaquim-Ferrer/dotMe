@@ -11,6 +11,35 @@
   </head>
   <body>
     <div class="container">
+      <div id="sidenav" class="sidenav">
+        <div class="sidenav__container">
+          <div class="sidenav__links">
+            <a href="/CV">
+              <p>
+                CV
+              </p>
+            </a>
+            <a href="/projects">
+              <p>
+                Projects
+              </p>
+            </a>
+            <a
+              href="https://www.linkedin.com/in/joaquim-ferrer-2a8491111/"
+              class="sidenav__linkdin"
+            >
+              <img
+                src="/images/linkedin_img.svg"
+                alt="linkedin logo"
+                class="navbar__link-box__img"
+              />
+            </a>
+          </div>
+          <a href="javascript:void(0)" class="closebtn" onclick="closeSidenav()"
+            >&times;</a
+          >
+        </div>
+      </div>
       <nav class="navbar" id="navbar">
         <div class="navbar__nav-box">
           <a href="/CV">
@@ -21,11 +50,11 @@
           </a>
         </div>
         <div class="navbar__central">
-          <a href="/">
-            <p class="navbar__name">
-              Joaquim Ferrer<span class="textThingy">|</span>
-            </p>
-          </a>
+          <a href="/" class="navbar__home-link"></a>
+
+          <p class="navbar__name">
+            Joaquim Ferrer<span class="textThingy">|</span>
+          </p>
           <p class="navbar__additional-info comment">
             joaquim.ferrer.freelancing<wbr />@gmail.com
           </p>
@@ -36,26 +65,10 @@
         <p
           alt="Open sidenav icon"
           class="navbar__button"
-          onclick="setActiveSideNav"
+          onclick="openSidenav()"
         >
           Go
         </p>
-        <img
-          class="navbar__arrow"
-          id="navbar__arrow"
-          alt="Swipe down"
-          src="/images/down_arrow_pink.svg"
-          onmouseover="toggleMoreNav()"
-        />
-        <div class="navbar__link-box">
-          <a href="https://www.linkedin.com/in/joaquim-ferrer-2a8491111/">
-            <img
-              src="/images/linkedin_img.svg"
-              alt="linkedin logo"
-              class="navbar__link-box__img"
-            />
-          </a>
-        </div>
       </nav>
       <main id="main">
         <div class="about-me">

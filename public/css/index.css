@@ -108,6 +108,10 @@
   line-height: 2rem;
 }
 
+.text-thingy-on::after {
+  content: "\1F431";
+}
+
 .toolbelt {
   display: flex;
   flex-direction: column;

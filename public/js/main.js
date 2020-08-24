@@ -11,3 +11,11 @@ const toggleMoreNav = () => {
     moreNavOpen = false;
   }
 };
+
+const openSidenav = () => {
+  document.getElementById("sidenav").style.width = "100%";
+};
+
+const closeSidenav = () => {
+  document.getElementById("sidenav").style.width = "0";
+};

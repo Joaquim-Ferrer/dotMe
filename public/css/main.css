@@ -31,7 +31,6 @@ a {
   overflow-y: hidden;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
 }
 
 .navbar__central {
@@ -66,6 +65,7 @@ a {
   height: 1.5rem;
   font-size: 1.5rem;
   line-height: 1.5rem;
+  margin-left: auto;
 }
 
 .sidenav {
@@ -111,6 +111,14 @@ a {
   margin-right: 0px;
 }
 
+.navbar__home-link {
+  position: absolute;
+  width: 80%;
+  height: 3.5rem;
+  left: 0;
+  top: 0;
+}
+
 #main {
   padding-top: 2rem;
   width: 100%;
@@ -138,6 +146,52 @@ a {
   color: #75715e;
 }
 
+.sidenav {
+  height: 100vh;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background-color: #1e1f1c;
+  overflow-x: hidden;
+  transition: 1s;
+}
+
+.sidenav__container {
+  display: flex;
+  height: 100%;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.sidenav__links {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.sidenav__linkdin {
+  margin-top: auto !important;
+  margin-bottom: 24px;
+}
+
+.sidenav .closebtn {
+  font-size: 36px;
+  color: #f92672;
+  margin-top: 21px;
+  margin-right: 30px;
+}
+
+.sidenav a {
+  text-decoration: none;
+  display: block;
+  transition: 0.3s;
+  margin-top: 10px;
+  margin-left: 30px;
+}
+
 @media (min-width: 950px) {
   .container {
     padding: 0px 60px;
@@ -153,6 +207,10 @@ a {
     margin-right: 0px;
   }
 
+  .navbar__name {
+    text-align: center;
+  }
+
   .navbar__button {
     display: none;
   }
@@ -161,16 +219,20 @@ a {
     display: flex;
   }
 
-  .navbar__name {
-    text-align: center;
-  }
-
   .navbar__link-box {
     display: flex;
   }
 
   .navbar__additional-info {
     text-align: center;
+  }
+
+  .navbar__home-link {
+    width: 270px;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   #main {
